@@ -1,0 +1,8 @@
+#Remove packages with apt.  Add more to the list by using the "with_items" statement.
+- name: Remove packages
+  apt:
+    state: absent
+    pkg:
+    - firefox
+    - firefox-locale-en
+    - xul-ext-ubufox
