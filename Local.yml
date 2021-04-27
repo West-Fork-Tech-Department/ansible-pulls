@@ -1,0 +1,6 @@
+- name: High School Teacher Maintenance Configuration
+  hosts: localhost
+  become: yes
+
+  tasks:
+    - include: tasks/removePackages.yml
