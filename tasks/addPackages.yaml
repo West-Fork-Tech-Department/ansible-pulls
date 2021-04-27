@@ -1,0 +1,14 @@
+#Start by updating the apt package cache and installing updates
+- name: Update repositories cache and upgrade all software to the latest versions.
+  apt:
+    name: "*"
+    state: latest
+    update_cache: yes
+    cache_valid_time: 3600
+
+#Add packages with apt.  Add more to the lith using the "with_items" statement.
+- name: Add packages
+  apt:
+    state: present
+    pkg:
+    - krita
