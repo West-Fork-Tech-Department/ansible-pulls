@@ -3,6 +3,5 @@
   apt:
     state: absent
     pkg:
-    - firefox
-    - firefox-locale-en
-    - xul-ext-ubufox
+    - firefox*
+    - thunderbird*
