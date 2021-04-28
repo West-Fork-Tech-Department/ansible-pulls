@@ -1,5 +1,5 @@
 - name: High School Teacher Maintenance Configuration
-  hosts: localhost
+  hosts: all
   become: yes
 
   tasks:
