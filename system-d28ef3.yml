@@ -1,9 +1,0 @@
-- name: System Specific Ansible Config
-  hosts: localhost
-  become: yes
-
-  tasks:
-    - include: tasks/cronJobs.yml
-
-- name: Continue with Defaults
-  import_playbook: local.yml

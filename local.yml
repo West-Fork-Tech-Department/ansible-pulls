@@ -4,4 +4,5 @@
 
   tasks:
     - include: tasks/removePackages.yml
-    - include: tasks/manageRepositories.yml
+    - include: tasks/addPackages.yml
+    - include: tasks/cronJobs.yml
